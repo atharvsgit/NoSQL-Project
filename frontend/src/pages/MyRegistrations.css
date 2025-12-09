@@ -1,0 +1,111 @@
+.my-registrations-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.registrations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.registration-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.registration-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.registration-header {
+  margin-bottom: 15px;
+}
+
+.event-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.event-title:hover {
+  text-decoration: underline;
+}
+
+.event-badges {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.attended-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.event-description {
+  color: #666;
+  font-size: 14px;
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.event-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 15px 0;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.detail-icon {
+  font-size: 16px;
+}
+
+.registration-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.registered-date {
+  font-size: 13px;
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .registration-footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .registration-footer .btn {
+    width: 100%;
+  }
+
+  .event-details {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
